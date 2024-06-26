@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./output.css">
+  <title>Frontend Mentor | Age calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<div class="bg-lightGrey min-h-screen flex justify-center items-center">
+
+  <div class="w-full md:w-1/2 flex flex-col bg-white rounded-xl p-8 lg:p-12 rounded-br-[80px] md:min-w-[600px] ">
+    <div>
+      <form class="w-full">
+        <div class="flex flex-col">
+          <div class="flex flex-row space-x-4 lg:w-10/12">
+            <div class="mb-3">
+              <div class="">
+                <label class="error:text-red-300 block text-gray-500 font-bold text-xs md:text-sm text-poppins tracking-[.40em] mb-1 md:mb-0 pr-4" for="day">
+                  DAY
+                </label>
+              </div>
+              <div class="">
+                <input class="error:border-red-300 h-14 rounded-lg border-2 border-gray-200  text-sm lg:text-2xl font-bold outline-none bg-white appearance-none  w-full lg:w-3/4 py-2 px-4 text-gray-700 leading-tight " id="day" type="number" placeholder="DD">
+              </div>
+            </div>
+            <div class="mb-3">
+              <div class="">
+                <label class="error:text-red-300 block text-gray-500 font-bold text-xs md:text-sm text-poppins tracking-[.40em] mb-1 md:mb-0 pr-4" for="month">
+                  MONTH
+                </label>
+              </div>
+              <div class="">
+                <input class="error:border-red-300 h-14 rounded-lg border-2 border-gray-200  text-sm lg:text-2xl font-bold outline-none bg-white appearance-none  w-full lg:w-3/4 py-2 px-4 text-gray-700 leading-tight " id="month" type="number" placeholder="MM">
+              </div>
+            </div>
+            <div class="mb-3">
+              <div class="">
+                <label class="error:text-red-300 block text-gray-500 font-bold text-xs md:text-sm text-poppins tracking-[.40em] mb-1 md:mb-0 pr-4" for="year">
+                  YEAR
+                </label>
+              </div>
+              <div class="">
+                <input class="error:border-red-300 h-14 rounded-lg border-2 border-gray-200  text-sm lg:text-2xl font-bold outline-none bg-white appearance-none  w-full lg:w-3/4 py-2 px-4 text-gray-700 leading-tight " id="year" type="number" min="1900" placeholder="YYYY">
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-row items-center">
+            <!-- <hr class="border border-lightGrey w-[80%]">
+            <input type="image" src="./assets/images/icon-arrow.svg"  alt="Submit" class="bg-purple p-3 w-12 rounded-full" /> -->
+
+            <div class="w-full">
+                <!-- Mobile Layout -->
+                <div class="relative flex items-center md:hidden mt-12">
+                    <hr class="w-full border-gray-300" aria-hidden="true">
+                    <button type="button" aria-label="Submit" class="absolute left-1/2 transform -translate-x-1/2 bg-white p-2 focus:outline-none focus:ring-2 focus:ring-indigo-500 submitButton">
+                        <img src="./assets/images/icon-arrow.svg"  alt="Submit" class="bg-purple p-3 w-12 h-12 rounded-full">
+                    </button>
+                </div>
+                <!-- Tablet and Desktop Layout -->
+                <div class="hidden md:flex items-center w-full mt-8">
+                    <hr class="flex-grow border-lightGrey" aria-hidden="true">
+                    <button type="button" aria-label="Submit" class="bg-white focus:outline-none focus:ring-2 focus:ring-indigo-500 submitButton">
+                        <img src="./assets/images/icon-arrow.svg"  alt="Submit" class="bg-purple p-3 w-16 rounded-full">
+                    </button>
+                </div>
+            </div>
+
+            <!-- <button class="shadow rounded-full bg-purple-500 hover:bg-purple-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4" type="button">
+              Up
+            </button> -->
+          </div>
+        </div>
+        </div><!-- /.flex -->
+        <div class="mt-12 font-poppins">
+           <div id="result" class="pb-10">
+              <p class="my-2 text-5xl font-extrabold sm:text-7xl">
+                <span class="text-[#864CFF]" id="ageYear">-- --</span> years
+              </p>
+              <p class="my-2 text-5xl font-extrabold sm:text-7xl">
+                <span class="text-[#864CFF]" id="ageMonth">-- --</span> months
+              </p>
+              <p class="my-2 text-5xl font-extrabold sm:text-7xl">
+                <span class="text-[#864CFF]" id="ageDay">-- --</span> days
+              </p>
+            </div>
+        </div><!-- /.mt-12 -->
+
+      </form>
+    </div>
+  </div><!-- /.w-72 flex flex-col bg-white rounded-lg -->
+
+</div><!-- /.min-h-screen flex justify-center items-center -->
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by Amadou.
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
